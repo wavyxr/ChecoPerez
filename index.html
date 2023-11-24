@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  
+  <head>
+    <style>
+      .boton_verde{
+
+          background: rgba(35,134,54) !important;
+      }
+      .color-bg{
+        background-color: linear-gradient(rgba(248, 81, 73, 0.1), rgba(248, 81, 73, 0.1)) ;
+      }
+      body{
+        background:rgba(13,17,23);
+        
+      }
+      .error{
+        background-color:rgb(37,23,29);
+;
+      }
+      .cargando{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 3px solid white;
+        border-top-color:transparent ;
+        animation: spin 1.2s linear infinite;
+      }
+
+   
+      
+
+      
+
+      @keyframes spin{
+        to{
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

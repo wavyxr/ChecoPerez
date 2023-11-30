@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-const Header = ({inicioSesion,setInicioSesion,login,setLogin, admin,setAdmin,ubicacion, setUbicacion}) => {
+import React, { useState,useEffect } from 'react'
 
+const Header = ({inicioSesion,setInicioSesion,login,setLogin, admin,setAdmin,ubicacion, setUbicacion}) => {
+  
+  useEffect(() => {
+    console.log('cambio ubicacion',ubicacion);
+  
+    
+  }, [ubicacion])
+  
   const setLocalStorage = value =>{
     try{ 
       setInicioSesion(value)
